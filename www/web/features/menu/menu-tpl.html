@@ -1,0 +1,29 @@
+<ion-view>
+  <div class="bar bar-header bar-balanced">
+    <h1 class="title">Speedy</h1>
+  </div>
+  <ion-content>
+    <br/>
+    <br/>
+    <div class="list">
+      <div class="item item-text-wrap">
+        <p>You have to un-color each box which is in red by tapping on it, within given time interval.</p>
+        <br/>
+        <ion-list>
+          <ion-radio ng-model="menuObj.selectedLevelObj" ng-value="item" ng-repeat="item in levelsList">
+            <i class="icon ion-star"></i>
+            {{item.levelName}}
+          </ion-radio>
+        </ion-list>
+        <!--<a class="item item-icon-left" ng-repeat="item in levelsList">-->
+          <!--<i class="icon ion-android-star-outline"></i>-->
+          <!--{{item.levelName}}-->
+        <!--</a>-->
+        <button class="button button-block button-balanced" ng-click="onPlayClick(menuObj.selectedLevelObj)">
+          <span class="ion-play"></span>
+          PLAY
+        </button>
+      </div>
+    </div>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,21 @@
+<div class="box" ng-class="{'red' : obj.value, 'blue' : !obj.value}" ng-click="onBoxClick(obj)">
+  <!--{{value}}-->
+</div>
+
+<style>
+  .box{
+    height: 50px;
+    width: 50px;
+    border: 1px solid #fff;
+    position: relative;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  .red{
+    background-color: red;
+  }
+  .blue{
+    background-color: lightcyan;
+  }
+</style>
